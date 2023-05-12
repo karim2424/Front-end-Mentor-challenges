@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Product preview card component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500&family=Lobster&family=Montserrat:wght@400;600&display=swap"
+    rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    /*font-family: 'Fraunces', serif;
+font-family: 'Lobster', cursive;
+font-family: 'Montserrat', sans-serif;*/
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 2em 1em;
+      background-color: #F3EAE3;
+    }
+
+    img {
+
+      max-width: 100%;
+    }
+
+    .container {
+      background-color: white;
+      border-radius: 15px;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    .description {
+      padding: 3em;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .product-image {
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+
+    .description .product-category {
+      letter-spacing: 10px;
+      margin: 0;
+      text-transform: uppercase;
+      color: #8E9198;
+    }
+
+    .description .product-title {
+      font-family: 'Fraunces', serif;
+      font-size: 40px;
+      line-height: 1;
+      margin: 1rem 0;
+    }
+
+    .description span {
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+
+    .description .product-description {
+      font-size: 18px;
+      font-weight: 600;
+      color: #9797A1;
+      line-height: 1.7;
+      margin-bottom: 1rem;
+    }
+
+    .description .discount-price {
+      width: 45%;
+      font-family: 'Lobster', cursive;
+      font-size: 50px;
+      color: #418B70;
+    }
+
+    .description .original-price {
+      width: 45%;
+      text-decoration: line-through;
+      color: #9797A1;
+      font-size: 20px;
+      position: relative;
+      bottom: 10px;
+    }
+
+    .icon {
+      width: 20px;
+      height: 22px;
+      margin-right: 0.5em;
+    }
+
+    .btn {
+      width: 100%;
+      border: none;
+      background-color: #3D8168;
+      padding: 1em 0;
+      color: white;
+      border-radius: 15px;
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    @media(min-width: 700px) {
+      .container {
+        position: absolute;
+        /* width: 40%; */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 660px;
+      }
+
+      .row {
+        display: flex;
+      }
+
+      .product-image {
+        width: 50%;
+      }
+
+      .product-image img {
+        height: 100%;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+      }
+
+      .description {
+        width: 50%;
+        padding: 2em;
+      }
+
+      .description .product-description {
+        font-size: 15px;
+      }
+
+      .description .discount-price {
+        font-size: 40px;
+      }
+
+      .description .original-price {
+        font-size: 16px;
+        text-align: center;
+      }
+
+      .icon {
+        height: 17px;
+        width: 15px;
+      }
+
+      .btn {
+        font-size: 18px;
+        margin-top: 1rem;
+      }
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container row">
+    <picture class="product-image">
+      <source media="(max-width:699px)" srcset="images/image-product-mobile.jpg">
+      <source media="(min-width:700px)" srcset="images/image-product-desktop.jpg">
+      <img src="/images/favicon-32x32.png" alt="a bottle of  perfume with leafs">
+    </picture>
+    <div class="description">
+      <p class="product-category">Perfume</p>
+      <h1 class="product-title">Gabrielle Essence Eau De Parfum</h1>
+      <p class="product-description">
+        A floral, solar and voluptuous interpretation composed by Olivier Polge,
+        Perfumer-Creator for the House of CHANEL.
+      </p>
+      <span class="discount-price">$149.99</span>
+      <span class="original-price">$169.99</span>
+      <button class="btn"><img class="icon" src="./images/icon-cart.svg"></img> Add to Cart</button>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">kabir karim</a>.
+  </div>
+</body>
+
+</html>
