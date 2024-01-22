@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Overpass, sans-serif;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+h1,h2,h3,h4,h5,h6{
+    text-wrap: balance;
+}
+
+$white:  hsl(0, 0%, 100%);
+$light_grey: hsl(217, 12%, 63%);
+$medium_grey:  hsl(216, 12%, 54%);
+$dark_blue: hsl(213, 19%, 18%);
+$V_dark_blue: hsl(216, 12%, 8%);
+$prime_orange: hsl(25, 97%, 53%);
+body{
+    background-color: $V_dark_blue;
+}
+h1{
+    color: $white;
+    font-weight: 700;
+    font-size: 24px;
+}
+p{
+    margin-top: .5em;
+    color: $medium_grey;
+    line-height: 1.6;
+    font-size: 15px;
+}
+span{
+    display: block;
+    gap: 1px;
+    color: $medium_grey;
+}
+
+span:hover{
+    background-color: $light_grey;
+    color: $white;
+    cursor: pointer;
+}
+
+button{
+    color: $white;
+    font-size: 15px;
+    font-weight: 400;
+    padding:  .25rem;
+    border-radius: 100px;
+    letter-spacing: 2px;
+    background-color: $prime_orange;
+}
+
+button:hover{
+    background-color: $white;
+    color: $prime_orange;
+    cursor: pointer;
+}
+.container{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    height: calc(100vh - 14.55px);
+}
+.card{
+    display: grid;
+    min-height: 342.287px;
+    row-gap: 1em;
+    max-width: 340px;
+    padding: 2em 2em;
+    border-radius: 20px;
+    background-image: radial-gradient( circle at top center,hsl(216, 18%, 18%) 5%,hsl(216, 18%, 16%) 15%,hsl(216, 18%, 14%) 30%, hsl(216, 18%, 10%));
+    // background-color: hsl(216, 18%, 12%);
+}
+.circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    padding: 1em;
+    font-size: 14px;
+    background-color: $dark_blue;
+}
+
+.rating-numbers{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.selected-ratting{
+    background-color: $prime_orange;
+    color: $white;
+}
+
+.centering{
+    justify-items: center;
+    align-items: center;
+}
+
+.text-deco{
+    text-align: center;
+    margin: 0;
+}
+
+.result{
+    text-align: center;
+    padding: .25rem .75rem;
+    border-radius: 100px;
+    color: $prime_orange;
+    font-size: 14px;
+    background-color: $dark_blue;
+}
+
+.thanks{
+    display: none;
+}
+
+
+@media(max-width: 450px) {
+    .card{
+        width: 270px;
+        row-gap: .5rem;
+    }
+    .circle{
+        width: 1em;
+        height: 1em;
+    }
+    span:hover{
+        background-color: $prime_orange;
+    }
+}
