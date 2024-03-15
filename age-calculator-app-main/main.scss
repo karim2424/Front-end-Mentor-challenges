@@ -58,7 +58,18 @@ input::-webkit-inner-spin-button {
                         border-radius: 5px;
                         outline-color: $primOne;
                         border: 2px solid $neutralLightGrey;
-                        
+                        color: $neutralOffBlack !important;
+                    }
+                    .error{
+                        color: $primTwo;
+                        border-color: $primTwo;
+                    }
+                    p{
+                        margin-top: .5em;
+                        font-size: 12px;
+                        font-weight: 400;
+                        font-style: italic;
+                        color: $primTwo;
                     }
             }
             }

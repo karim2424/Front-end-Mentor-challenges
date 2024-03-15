@@ -59,6 +59,18 @@ input::-webkit-inner-spin-button {
   border-radius: 5px;
   outline-color: hsl(259, 100%, 65%);
   border: 2px solid hsl(0, 0%, 86%);
+  color: hsl(0, 0%, 8%) !important;
+}
+.container .card .date-container .input-container .error {
+  color: hsl(0, 100%, 67%);
+  border-color: hsl(0, 100%, 67%);
+}
+.container .card .date-container .input-container p {
+  margin-top: 0.5em;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: italic;
+  color: hsl(0, 100%, 67%);
 }
 .container .card .text-size {
   font-size: 100px;
