@@ -46,7 +46,10 @@ function setValues(day, month, year) {
 function ageCalculator(dd, mm, yy) {
     let currentDate = new Date();
     let birt = new Date(yy, mm - 1, dd);
-    let days = 0; //number of days passed from the date of birth until current date
+    let currentAge = new Date();
+    currentAge.setFullYear(0);
+    currentAge.setMonth(0);
+    currentAge.setDate(0);
     while (true) {
         if (
             currentDate.getUTCDate() === birt.getUTCDate() &&
@@ -55,14 +58,14 @@ function ageCalculator(dd, mm, yy) {
         ) {
             break;
         } else {
-            days += 1;
             birt.setDate(birt.getDate() + 1);
+            currentAge.setDate(currentAge.getDate() + 1)
         }
     }
     setValues(
-        (days % 365) % 30,
-        Math.floor((days % 365) / 30),
-        Math.floor(days / 365)
+        currentAge.getDate(),
+        currentAge.getMonth(),
+        currentAge.getFullYear()
     ); // calling function to add our calculated age;
 }
 
@@ -81,7 +84,6 @@ function CheckMonth() {
         day.setAttribute("max", 29);
     } else {
         day.setAttribute("max", 31);
-        console.log(month.value);
     }
 }
 
