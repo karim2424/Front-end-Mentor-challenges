@@ -1,0 +1,303 @@
+/* univesel */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* header start */
+.header {
+  background-image: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  position: relative;
+  border-bottom-left-radius: 100px;
+  min-height: 500px;
+  overflow: hidden;
+  z-index: 1;
+}
+.header .bg-pattern {
+  position: absolute;
+  top: -1370px;
+  z-index: -1;
+  right: -1300px;
+}
+.header .nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2em 0;
+}
+.header .nav-bar .logo {
+  margin-right: 2em;
+}
+.header .nav-bar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.header .nav-bar .active {
+  display: block;
+}
+.header .nav-bar .inactive {
+  display: none;
+}
+.header .nav-bar .nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+}
+.header .nav-bar .nav-list .list-items {
+  position: relative;
+}
+.header .nav-bar .nav-list .list-items:hover {
+  text-decoration: underline;
+  color: hsl(0, 0%, 100%);
+}
+.header .nav-bar .nav-list .list-items .list-links {
+  font-style: none;
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  font-family: "Ubuntu", sans-serif;
+}
+.header .nav-bar .nav-list .list-items .list-links img {
+  margin-left: 0.25em;
+}
+.header .nav-bar .nav-list .button {
+  background-color: hsl(0, 0%, 100%);
+  padding: 0.75em 2em;
+  border-radius: 200px;
+  cursor: pointer;
+}
+.header .nav-bar .nav-list .button:hover {
+  background-color: hsl(355, 100%, 74%);
+}
+.header .nav-bar .nav-list .button:hover .list-links {
+  color: hsl(0, 0%, 100%);
+}
+.header .nav-bar .nav-list .button .list-links {
+  color: hsl(356, 100%, 66%);
+  font-weight: 700;
+}
+.header .nav-bar .nav-list .droplist {
+  background-color: hsl(0, 0%, 100%);
+  position: absolute;
+  padding: 0.5em 1.5em;
+  width: 180px;
+  top: 40px;
+  left: -20px;
+  border-radius: 5px;
+}
+.header .nav-bar .nav-list .droplist .droplist-items {
+  margin: 1em 0;
+}
+.header .nav-bar .nav-list .droplist .droplist-items .droplist-links {
+  text-decoration: none;
+  color: black;
+  font-family: "Ubuntu", sans-serif;
+}
+.header .nav-bar .nav-list .droplist .droplist-items .droplist-links:hover {
+  font-weight: 700;
+}
+.header .hero {
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  margin-top: 3.5em;
+}
+.header .hero h1 {
+  font-family: "Overpass", sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 0.25em;
+}
+.header .hero .button-container {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin-top: 3em;
+  font-weight: 700;
+}
+.header .hero .button-container .button {
+  background-color: hsl(0, 0%, 100%);
+  padding: 0.75em 1em;
+  border-radius: 200px;
+  color: hsl(356, 100%, 66%);
+  cursor: pointer;
+}
+.header .hero .button-container .button:hover {
+  background-color: hsl(355, 100%, 74%);
+  color: hsl(0, 0%, 100%);
+}
+.header .hero .button-container .second-button {
+  border: 1px solid hsl(0, 0%, 100%);
+  padding: 0.75em 1em;
+  border-radius: 200px;
+  cursor: pointer;
+}
+.header .hero .button-container .second-button:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(356, 100%, 66%);
+}
+
+/* header end */
+/* main start */
+.main {
+  font-family: "Overpass", sans-serif;
+  color: hsl(208, 49%, 24%);
+  overflow: hidden;
+  margin-top: 3em;
+  padding-top: 1em;
+}
+.main .section h1 {
+  text-align: center;
+  margin: 2em;
+  font-size: 35px;
+}
+.main .section .sub-container {
+  display: flex;
+  position: relative;
+  min-height: 600px;
+}
+.main .section .sub-container .section-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+.main .section .sub-container .section-text h2 {
+  font-size: 24px;
+  margin-bottom: 1em;
+}
+.main .section .sub-container .section-text p {
+  line-height: 1.7;
+}
+.main .section .sub-container .section-img {
+  position: absolute;
+  right: -550px;
+  top: -193px;
+}
+.main .section .sub-container .section-img img {
+  max-width: 80%;
+}
+.main .wraper {
+  background-image: linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+  color: hsl(0, 0%, 100%);
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+.main .wraper .sub-container {
+  display: flex;
+  min-height: 400px;
+  align-items: center;
+}
+.main .wraper .section-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  justify-content: center;
+  width: 45%;
+  z-index: 1;
+}
+.main .wraper .section-text h2 {
+  font-size: 30px;
+}
+.main .wraper .section-text p {
+  line-height: 1.7;
+}
+.main .wraper .img-container {
+  width: 50%;
+}
+.main .wraper .img-container .section-img {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.main .wraper .img-container .section-img .img-clip {
+  position: relative;
+  height: 400px;
+  min-width: 100vw;
+  overflow: hidden;
+  left: -190px;
+}
+.main .wraper .img-container .section-img img {
+  position: absolute;
+}
+.main .wraper .img-container .section-img .patterne-img {
+  top: -500px;
+  left: -195px;
+}
+.main .wraper .img-container .section-img .phone-img {
+  left: -40px;
+  top: -70px;
+  z-index: 1;
+}
+.main .flex-container {
+  margin-top: 20em;
+  margin-bottom: 10em;
+  display: flex;
+  min-height: 600px;
+}
+.main .flex-container .section-img {
+  position: relative;
+  width: 50%;
+}
+.main .flex-container .section-img img {
+  position: absolute;
+  top: -190px;
+  left: -425px;
+}
+.main .flex-container .section-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+.main .flex-container .section-text h2 {
+  font-size: 24px;
+  margin-bottom: 1em;
+}
+.main .flex-container .section-text p {
+  line-height: 1.7;
+}
+
+/* main end */
+/* Footer start */
+.footer {
+  background-color: hsl(240, 10%, 16%);
+}
+.footer ul {
+  list-style: none;
+}
+.footer .footer-columns {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Ubuntu", sans-serif;
+  padding: 4em 8em 4em 0;
+}
+.footer .footer-columns .columns-items {
+  color: hsl(0, 0%, 100%);
+}
+.footer .footer-columns .columns-items .items-list {
+  margin-top: 1.5em;
+}
+.footer .footer-columns .columns-items .items-list .list-items {
+  line-height: 2;
+}
+.footer .footer-columns .columns-items .items-list .list-items .items-link {
+  color: hsl(240, 2%, 79%);
+  text-decoration: none;
+}
+.footer .footer-columns .columns-items .items-list .list-items .items-link:hover, .footer .footer-columns .columns-items .items-list .list-items .items-link:focus {
+  text-decoration: underline;
+}
+
+/* Footer end */
+
+/*# sourceMappingURL=main.css.map */
