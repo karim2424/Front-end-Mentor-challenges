@@ -271,6 +271,7 @@
 /* Footer start */
 .footer {
   background-color: hsl(240, 10%, 16%);
+  border-top-right-radius: 100px;
 }
 .footer ul {
   list-style: none;
